@@ -28,7 +28,7 @@ colors = {
     'text': '#7FDBFF'
 }
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
         html.H1(
             children='Deahl Farm SUrface Elevations',
